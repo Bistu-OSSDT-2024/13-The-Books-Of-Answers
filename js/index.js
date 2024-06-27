@@ -1,8 +1,5 @@
-
 document.getElementById('randomNumber').textContent = '';
-
 function generateRandomNumber() {
-
     var min = 1;
     var max = 497;
 
@@ -506,9 +503,6 @@ function generateRandomNumber() {
         "把这看作一次机会",
         "保守你的秘密",
     ];
-
     var random_num = Math.floor(Math.random() * (max - min + 1)) + min;
-
-
     document.getElementById('randomNumber').textContent = answers[random_num];
 }
