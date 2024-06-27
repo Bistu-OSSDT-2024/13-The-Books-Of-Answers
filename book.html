@@ -1,72 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="answers,book,ask,question">
-    <meta name="description" content="The book of answers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录/注册</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>答案之书</title>
+
+    <!-- 引用外部 CSS 文件 -->
+    <link rel="stylesheet" type="text/css" href="./css/book.css">
+
 </head>
 <body>
-<div class="container">
-    <div class="container-forms">
-        <div class="container-info">
-            <div class="info-item">
-                <div class="table">
-                    <div class="table-cell">
-                        <p>
-                            你有账户吗？
-                        </p>
-                        <button class="info-btn">
-                            登 录
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="table">
-                    <div class="table-cell">
-                        <p>
-                            没有账户吗？
-                        </p>
-                        <button class="info-btn">
-                            注册
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-form">
-            <div class="form-item log-in">
-                <div class="table">
-                    <div class="table-cell">
-                        <input id="usernameLogin" type="text" name="Username" placeholder="用户名">
-                        <input id="usernamePassword" type="password" name="Password" placeholder="密码">
-                        <button class="btn" onclick="login()">
-                            登 录
-                        </button>
+<div class="imgContainer">
+    <img src="image/img.png" alt="答案之书" width="300px" height="300px">
+</div>
+<div class="resultContainer">
+    <h1>你好</h1>
+    <h3>这是一本神奇的答案之书</h3>
+    <h3>心中默念问题三次，点击按钮，便可弹出答案</h3>
 
-                    </div>
-                </div>
-            </div>
-            <div class="form-item sign-up">
-                <div class="table">
-                    <div class="table-cell">
-                        <input type="text" name="email" placeholder="邮箱">
-                        <input type="text" name="Username" placeholder="用户名">
-                        <input type="password" name="Password" placeholder="密码">
-                        <button class="btn">
-                            注 册
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+    <button onclick="generateRandomNumber()">点击获取答案</button>
+    <div class="randomContainer">
+        <p id="randomNumber"></p>
     </div>
 </div>
-<script src="js/script.js"></script>
+<!-- 引用外部 JavaScript 文件 -->
+<script type="text/javascript" src="js/book.js"></script>
+
 </body>
 </html>
