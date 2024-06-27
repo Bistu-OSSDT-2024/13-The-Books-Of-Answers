@@ -7,6 +7,7 @@
     <meta name="description" content="The book of answers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录/注册</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -41,10 +42,12 @@
             <div class="form-item log-in">
                 <div class="table">
                     <div class="table-cell">
-                        <input type="text" name="Username" placeholder="用户名">
-                        <input type="password" name="Password" placeholder="密码">
+                        <input id="usernameLogin" type="text" name="Username" placeholder="用户名">
+                        <input id="usernamePassword" type="password" name="Password" placeholder="密码">
+                        <button class="btn" onclick="login()">
                             登 录
                         </button>
+
                     </div>
                 </div>
             </div>
@@ -57,11 +60,13 @@
                         <button class="btn">
                             注 册
                         </button>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
